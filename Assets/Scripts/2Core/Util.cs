@@ -15,11 +15,11 @@ namespace LuKye.Core
 		/// </summary>
 		/// <returns>The array.</returns>
 		/// <param name="array">Array.</param>
-		public static object RandomArray (object[] array)
+		public static object RandomArray(object[] array)
 		{
 			int length = array.Length;
-			int index = Random.Range (0, length - 1);
-			return array [index];
+			int index = Random.Range(0, length - 1);
+			return array[index];
 		}
 	}
 }

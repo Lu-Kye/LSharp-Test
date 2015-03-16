@@ -12,10 +12,10 @@ public class Main : UIBase
 	/// Awake this instance.
 	/// The initations of game should be done here
 	/// </summary>
-	void Awake ()
+	void Awake()
 	{
 		// init managers
-		// lsharp manager
-		LSharpManager.Instance.ToString();
+		LSharpManager.Instance.SetUp();
+		AccelerationManager.Instance.SetUp();
 	}
 }

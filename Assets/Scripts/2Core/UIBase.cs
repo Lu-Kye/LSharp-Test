@@ -9,7 +9,7 @@ namespace LuKye.Core
 	 */ 
 	public class UIBase : MonoBehaviour
 	{
-		#region acceleration
+		#region acceleration functions
 		/// <summary>
 		/// LKs the on acceleration left.
 		/// </summary>

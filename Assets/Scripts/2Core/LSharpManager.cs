@@ -20,13 +20,10 @@
 		/// Sets up.
 		/// Init some data or attributes
 		/// </summary>
-		protected override void SetUp ()
+		public override void SetUp()
 		{
 			// base
-			base.SetUp ();
-
-			// log
-			UtilLog.Log("LSharpManager::SetUp");
+			base.SetUp();
 		}
 	}
 }

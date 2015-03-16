@@ -19,7 +19,23 @@ namespace LuKye.Core
 		ArrayList delegates;
 		Vector3 accelerationBefore;
 		Vector3 accelerationNow;
-		public float checkInterval = 0.3f;
+
+		const float checkInterval = 0.3f;
+
+		/// <summary>
+		/// Sets up.
+		/// Init some data or attributes
+		/// </summary>
+		public override void SetUp()
+		{
+			// base
+			base.SetUp();
+
+			// init
+			this.delegates = new ArrayList();
+			this.accelerationBefore = new Vector3();
+			this.accelerationNow = new Vector3();
+		}
 
 		/// <summary>
 		/// Update this instance.
@@ -31,16 +47,6 @@ namespace LuKye.Core
 		}
 
 		#region custom functions
-		/// <summary>
-		/// LKs the start.
-		/// </summary>
-		public void LKStart()
-		{
-			this.delegates = new ArrayList();
-			this.accelerationBefore = new Vector3();
-			this.accelerationNow = new Vector3();
-		}
-
 		/// <summary>
 		/// LKs the register.
 		/// </summary>
