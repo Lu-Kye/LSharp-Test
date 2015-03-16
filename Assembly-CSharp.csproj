@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{B0F1D842-6062-0961-EAD4-601E3D6A7558}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\CLRSharp_Env.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\CrossBind\Yield.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\Execute\CodeBody.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\Execute\Context.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\Execute\StackFrame.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\Execute\ValueOnStack.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\Interface\EnvAndLog.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\Type\CLRSharp\CLRSharp_Instance.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\Type\CLRSharp\CLRSharp_Type.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\Type\Delegate\Delegate_Helper.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\Type\System\System_Type.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\Type\Type_Common.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\CLRSharp\Type\Type_List.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\BitAccess.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\BitSet.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\CvInfo.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\DataStream.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\DbiDbgHdr.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\DbiHeader.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\DbiModuleInfo.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\DbiSecCon.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\IntHashTable.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\Interfaces.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\MsfDirectory.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\PdbConstant.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\PdbDebugException.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\PdbException.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\PdbFile.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\PdbFileHeader.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\PdbFunction.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\PdbLine.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\PdbLines.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\PdbReader.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\PdbScope.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\PdbSlot.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\PdbSource.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Microsoft.Cci.Pdb\SourceLocationProvider.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Mono.Cecil.Pdb\ISymUnmanagedDocumentWriter.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Mono.Cecil.Pdb\ISymUnmanagedWriter2.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Mono.Cecil.Pdb\ModuleMetadata.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Mono.Cecil.Pdb\PdbHelper.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Mono.Cecil.Pdb\PdbReader.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Mono.Cecil.Pdb\PdbWriter.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Mono.Cecil.Pdb\SymDocumentWriter.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Mono.Cecil.Pdb\SymWriter.cs" />
+     <Compile Include="Assets\Scripts\1Libs\LSharp\Test\test001.cs" />
+     <Compile Include="Assets\Scripts\2Core\AccelerationManager.cs" />
+     <Compile Include="Assets\Scripts\2Core\LSharpClass.cs" />
+     <Compile Include="Assets\Scripts\2Core\LSharpDll.cs" />
+     <Compile Include="Assets\Scripts\2Core\LSharpManager.cs" />
+     <Compile Include="Assets\Scripts\2Core\Manager.cs" />
+     <Compile Include="Assets\Scripts\2Core\ManagerGO.cs" />
+     <Compile Include="Assets\Scripts\2Core\SingleTon.cs" />
+     <Compile Include="Assets\Scripts\2Core\SingleTonGO.cs" />
+     <Compile Include="Assets\Scripts\2Core\UIBase.cs" />
+     <Compile Include="Assets\Scripts\2Core\UIButton.cs" />
+     <Compile Include="Assets\Scripts\2Core\Util.cs" />
+     <Compile Include="Assets\Scripts\2Core\UtilLog.cs" />
+     <Compile Include="Assets\Scripts\Game\Main.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>/Users/lujian/Documents/unity-workspace/LSharp Test/Assets/Scripts/1Libs/LSharp/Mono.Cecil.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
