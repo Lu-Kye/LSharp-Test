@@ -26,5 +26,14 @@ namespace LuKye.Core
 		{
 			Debug.LogError("[ERROR] " + msg);
 		}
+
+		/// <summary>
+		/// Logs the warning msg.
+		/// </summary>
+		/// <param name="msg">Message.</param>
+		public static void LogW(string msg)
+		{
+			Debug.LogWarning("[WARNING] " + msg);
+		}
 	}
 }

@@ -30,9 +30,8 @@
     <ConsolePause>False</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
-    <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Test\Test.cs" />
+    <Compile Include="Main.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -40,7 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Assembly-CSharp.csproj">
-      <Project>{3316A6BC-5DC2-BE19-0C83-9B455B146B40}</Project>
+      <Project>{B0F1D842-6062-0961-EAD4-601E3D6A7558}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

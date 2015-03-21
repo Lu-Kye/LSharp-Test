@@ -51,7 +51,7 @@ namespace LuKye.Core
 		/// LKs the register.
 		/// </summary>
 		/// <param name="accelerationDelegate">Acceleration delegate.</param>
-		public void LKRegister(UIBase accelerationDelegate)
+		public void LKRegister(AccelerationHandler accelerationDelegate)
 		{
 			this.delegates.Add(accelerationDelegate);
 		}
@@ -60,7 +60,7 @@ namespace LuKye.Core
 		/// LKs the un register.
 		/// </summary>
 		/// <param name="accelerationDelegate">Acceleration delegate.</param>
-		public void LKUnRegister(UIBase accelerationDelegate)
+		public void LKUnRegister(AccelerationHandler accelerationDelegate)
 		{
 			this.delegates.Remove(accelerationDelegate);
 		}
@@ -107,7 +107,7 @@ namespace LuKye.Core
 
 			// do
 			ArrayList delegates = this.delegates;
-			foreach (UIBase accelerationDelegate in delegates) {		
+			foreach (AccelerationHandler accelerationDelegate in delegates) {		
 				// left
 				if (x < zero)
 					accelerationDelegate.LKOnAccelerationLeft(Mathf.Abs(x), accelerationBefore, accelerationNow);

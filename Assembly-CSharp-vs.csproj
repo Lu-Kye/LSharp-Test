@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -92,21 +92,40 @@
      <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Mono.Cecil.Pdb\SymDocumentWriter.cs" />
      <Compile Include="Assets\Scripts\1Libs\LSharp\Mono.Cecil.Pdb\Mono.Cecil.Pdb\SymWriter.cs" />
      <Compile Include="Assets\Scripts\1Libs\LSharp\Test\test001.cs" />
+     <Compile Include="Assets\Scripts\1Libs\MobileInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\Scripts\1Libs\MobileInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\Scripts\1Libs\MobileInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\Scripts\1Libs\MobileInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\Scripts\1Libs\MobileInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\Scripts\1Libs\MobileInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Scripts\1Libs\iTween\Sample\MoveSample.cs" />
+     <Compile Include="Assets\Scripts\1Libs\iTween\Sample\RotateSample.cs" />
+     <Compile Include="Assets\Scripts\1Libs\iTween\Sample\SampleInfo.cs" />
+     <Compile Include="Assets\Scripts\1Libs\iTween\iTween.cs" />
+     <Compile Include="Assets\Scripts\2Core\AccelerationHandler.cs" />
      <Compile Include="Assets\Scripts\2Core\AccelerationManager.cs" />
      <Compile Include="Assets\Scripts\2Core\LSharpClass.cs" />
      <Compile Include="Assets\Scripts\2Core\LSharpDll.cs" />
+     <Compile Include="Assets\Scripts\2Core\LSharpEnviorment.cs" />
+     <Compile Include="Assets\Scripts\2Core\LSharpLogger.cs" />
      <Compile Include="Assets\Scripts\2Core\LSharpManager.cs" />
+     <Compile Include="Assets\Scripts\2Core\LSharpThreadContext.cs" />
      <Compile Include="Assets\Scripts\2Core\Manager.cs" />
      <Compile Include="Assets\Scripts\2Core\ManagerGO.cs" />
      <Compile Include="Assets\Scripts\2Core\SingleTon.cs" />
      <Compile Include="Assets\Scripts\2Core\SingleTonGO.cs" />
      <Compile Include="Assets\Scripts\2Core\UIBase.cs" />
      <Compile Include="Assets\Scripts\2Core\UIButton.cs" />
+     <Compile Include="Assets\Scripts\2Core\UIJoystick.cs" />
      <Compile Include="Assets\Scripts\2Core\Util.cs" />
      <Compile Include="Assets\Scripts\2Core\UtilLog.cs" />
      <Compile Include="Assets\Scripts\Game\Main.cs" />
+     <None Include="Assets\Scripts\1Libs\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="LSharpScripts">
+ <HintPath>/Users/lujian/Documents/unity-workspace/LSharp Test/Assets/Resources/LSharpDlls/LSharpScripts.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>/Users/lujian/Documents/unity-workspace/LSharp Test/Assets/Scripts/1Libs/LSharp/Mono.Cecil.dll</HintPath>
@@ -120,5 +139,6 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
+  <ProjectExtensions xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><MonoDevelop><Properties><Policies><TextStylePolicy inheritsSet="null" scope="text/x-csharp" /><CSharpFormattingPolicy BeforeMethodDeclarationParentheses="False" BeforeMethodCallParentheses="False" BeforeConstructorDeclarationParentheses="False" BeforeIndexerDeclarationBracket="False" BeforeDelegateDeclarationParentheses="False" NewParentheses="False" SpacesBeforeBrackets="False" BlankLinesBetweenMembers="0" inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp" /><TextStylePolicy FileWidth="120" TabsToSpaces="False" EolMarker="Unix" inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/plain" /><TextStylePolicy inheritsSet="null" scope="text/x-fsharp" /><FSharpFormattingPolicy scope="text/x-fsharp"><DefaultFormat><IndentOnTryWith>False</IndentOnTryWith><ReorderOpenDeclaration>False</ReorderOpenDeclaration><SpaceAfterComma>True</SpaceAfterComma><SpaceAfterSemicolon>True</SpaceAfterSemicolon><SpaceAroundDelimiter>True</SpaceAroundDelimiter><SpaceBeforeArgument>True</SpaceBeforeArgument><SpaceBeforeColon>True</SpaceBeforeColon></DefaultFormat></FSharpFormattingPolicy><TextStylePolicy inheritsSet="null" scope="application/xml" /><XmlFormattingPolicy inheritsSet="Mono" inheritsScope="application/xml" scope="application/xml" /></Policies></Properties></MonoDevelop></ProjectExtensions>
+
 </Project>
