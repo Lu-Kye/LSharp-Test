@@ -14,8 +14,11 @@ public class Main : UIBase
 	/// </summary>
 	void Awake()
 	{
-		// init managers
 		LSharpManager.Instance.SetUp();
-		AccelerationManager.Instance.SetUp();
+
+		var dll = LSharpManager.Instance.GetDllByName(LSharpManager.DLLS.LSharpScripts);
+		var className = "LSharpScripts.Test";
+		var cls = new LSharpClass(dll, className);
+		var obj = cls.CallMethodCtor();
 	}
 }
